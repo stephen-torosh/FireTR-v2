@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="../main.js" defer></script>
+
+  <style>
+    * {
+      font-family: cursive;
+      font-size: large;
+    }
+
+    .title {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 10px;
+    }
+
+    .setting {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      margin: 10px 5px 10px 5px;
+    }
+
+    select, input {
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="title">
+    FireTR-OS settings
+  </div>
+
+  <div class="setting">
+    <div>Brightness</div>
+    <input type="range" min="5" max="200" value="100" id="Brightness">
+  </div>
+</body>
+</html>

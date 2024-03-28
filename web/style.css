@@ -1,0 +1,96 @@
+/* FireTR-v2 Operational System */
+
+/* Open Source project */
+
+/* FireInc company 2024 */
+
+html,body {
+  margin: 0;
+  padding: 0;
+}
+body {
+  min-height: 100vh;
+}
+#desktop {
+  display: flex;
+  width: 0;
+  height: 0;
+  background-image: url("src/bg.png");
+  background-size: cover;
+  flex-direction: column;
+  z-index: 0;
+  filter: brightness(100%)
+}
+
+.appIconDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  font-size: 1em;
+  font-family: cursive;
+}
+
+.appIconDiv:hover {
+  opacity: 0.8;
+}
+
+.appsDiv {
+  height: calc(100% - 50px);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+  background-color: rgba(0, 0, 0, 0.422);
+  color: white;
+  font-family: cursive;
+}
+
+.navbar-left, #navbar-right {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.navbar-left {
+  justify-content: start;
+  margin-left: 10px;
+}
+
+#navbar-right {
+  justify-content: end;
+  margin-right: 10px;
+}
+
+.fireTR-icon:hover {
+  opacity: 0.8;
+}
+
+.desktopWindow {
+  background-color: rgba(255, 255, 255, 0.700);
+  z-index: 1;
+  position: absolute; 
+  font-family: cursive;
+  color: white;
+  top: calc(50% - 200px);
+  left: calc(50% - 300px);
+}
+
+.desktopWindow:first-child {
+  margin-top: 10px;
+}
+
+#launch {
+  display: none;
+  position: absolute;
+  z-index: 5;
+  top: calc(100% - 560px);
+  left: 10px;
+  width: 500px;
+  height: 500px;
+  background-color: rgba(255, 255, 255, 0.550);
+  border-radius: 5%;
+}
